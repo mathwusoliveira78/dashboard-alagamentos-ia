@@ -1,0 +1,10 @@
+# Environments
+.venv
+.env
+
+# Cache
+__pycache__
+
+# Faiss
+faiss_docs.npy
+faiss_index.bin
