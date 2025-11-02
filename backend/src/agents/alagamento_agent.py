@@ -11,8 +11,18 @@ def alagamento_agent(near_doc):
         input=[
             {"role": "developer", "content": f"Data e tempo atual: {current_datetime}"},
             {"role": "developer", "content": SYSTEM_PROMPT_ALAGAMENTO_AGENT},
-            {"role": "developer", "content": near_doc},
-            {"role": "user", "content": "Gere um relatório com base na sua base de conhecimento."},
+            {
+                "role": "developer", 
+                "content": f"DADOS REAIS PARA ANÁLISE:\n\n{near_doc}"
+            },
+            {
+                "role": "user", 
+                "content": (
+                    "Analise os dados JSON fornecidos e gere o relatório completo AGORA. "
+                    "Use APENAS as informações reais do dataset. "
+                    "Não invente exemplos nem diga que não consegue processar."
+                )
+            },
         ],
     )
 
