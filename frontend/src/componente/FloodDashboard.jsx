@@ -6,7 +6,6 @@ const FloodDashboard = () => {
   const [period, setPeriod] = useState('month');
   const [reportFilter, setReportFilter] = useState('all');
 
-  // Dados simulados
   const kpis = {
     totalReports: reportFilter === 'prevention' ? 156 : reportFilter === 'response' ? 89 : 245,
     effectiveness: 78.5,
@@ -38,7 +37,7 @@ const FloodDashboard = () => {
 
   return (
     <div className="dashboard">
-      {/* Header */}
+
       <header className="dashboard-header">
         <div className="header-content">
           <div className="header-logo">
@@ -73,7 +72,6 @@ const FloodDashboard = () => {
         </div>
       </header>
 
-      {/* Critical Alert */}
       <div className="critical-alert">
         <AlertTriangle className="alert-icon" />
         <div>
@@ -82,9 +80,8 @@ const FloodDashboard = () => {
         </div>
       </div>
 
-      {/* KPI Cards */}
       <div className="kpi-grid">
-        {/* Total Reports */}
+
         <div className="kpi-card">
           <div className="kpi-header">
             <Activity className="kpi-icon blue" />
@@ -94,7 +91,6 @@ const FloodDashboard = () => {
           <p className="kpi-description">Total gerado no período</p>
         </div>
 
-        {/* Effectiveness Rate */}
         <div className="kpi-card">
           <div className="kpi-header">
             <TrendingUp className="kpi-icon green" />
@@ -104,7 +100,6 @@ const FloodDashboard = () => {
           <p className="kpi-description">Ações preventivas eficazes</p>
         </div>
 
-        {/* Response Time */}
         <div className="kpi-card">
           <div className="kpi-header">
             <Clock className="kpi-icon blue" />
@@ -114,7 +109,6 @@ const FloodDashboard = () => {
           <p className="kpi-description">Tempo médio alerta-resolução</p>
         </div>
 
-        {/* IGE */}
         <div className="kpi-card ige">
           <div className="kpi-header">
             <MapPin className="kpi-icon green" />
@@ -125,9 +119,8 @@ const FloodDashboard = () => {
         </div>
       </div>
 
-      {/* Main Content Grid */}
       <div className="content-grid">
-        {/* Reports Chart */}
+
         <div className="reports-section">
           <h3 className="section-title">Distribuição de Relatórios</h3>
           <div className="reports-list">
@@ -151,7 +144,6 @@ const FloodDashboard = () => {
             ))}
           </div>
 
-          {/* Heatmap Visualization */}
           <div className="heatmap-section">
             <h3 className="section-title">Mapa de Calor - Áreas Críticas</h3>
             <div className="heatmap-grid">
@@ -173,7 +165,6 @@ const FloodDashboard = () => {
           </div>
         </div>
 
-        {/* Risk Ranking */}
         <div className="ranking-section">
           <h3 className="section-title">Ranking de Reincidência</h3>
           <div className="ranking-list">
@@ -214,7 +205,6 @@ const FloodDashboard = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="dashboard-footer">
         <div className="footer-status">
           <div className="status-indicator" />

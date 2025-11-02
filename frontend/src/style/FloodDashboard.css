@@ -1,4 +1,3 @@
-/* FloodDashboard Styles */
 
 .dashboard {
   height: 100vh;
@@ -10,7 +9,6 @@
   overflow: hidden;
 }
 
-/* Header */
 .dashboard-header {
   margin-bottom: 0.75rem;
   display: flex;
@@ -69,7 +67,6 @@
   border-color: #3b82f6;
 }
 
-/* Alert */
 .critical-alert {
   margin-bottom: 0.5rem;
   background: linear-gradient(to right, rgba(127, 29, 29, 0.4), rgba(120, 53, 15, 0.4));
@@ -102,7 +99,6 @@
   margin: 0;
 }
 
-/* KPI Cards Grid */
 .kpi-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -183,7 +179,6 @@
   margin: 0;
 }
 
-/* Main Content Grid */
 .content-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -198,7 +193,6 @@
   }
 }
 
-/* Reports Section */
 .reports-section {
   background: linear-gradient(to bottom right, #111827, #1f2937);
   border: 1px solid #374151;
@@ -261,7 +255,6 @@
   transition: width 0.5s ease;
 }
 
-/* Heatmap */
 .heatmap-section {
   margin-top: 0.5rem;
 }
@@ -299,7 +292,6 @@
   margin: 0;
 }
 
-/* Risk Ranking */
 .ranking-section {
   background: linear-gradient(to bottom right, #111827, #1f2937);
   border: 1px solid #374151;
@@ -423,7 +415,6 @@
   background-color: #10b981;
 }
 
-/* Footer */
 .dashboard-footer {
   margin-top: 0.5rem;
   padding-top: 0.5rem;
@@ -459,7 +450,6 @@
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .dashboard {
     padding: 1rem;
